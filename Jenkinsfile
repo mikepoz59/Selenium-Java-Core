@@ -1,12 +1,8 @@
 pipeline {
-    agent {
-        any {
-            image 'maven:3.9.5-eclipse-temurin-11-alpine' 
-            args '-v /root/.m2:/root/.m2' 
-	    tools { 
-      	    	maven 'MAVEN_HOME' 
-            	jdk 'JAVA_HOME'
-	    }
+    agent any
+	tools { 
+	   maven 'Maven 3.9.5' 
+           jdk 'jdk11'
         }
     }
     stages {
