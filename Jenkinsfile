@@ -3,11 +3,11 @@ pipeline {
         any {
             image 'maven:3.9.5-eclipse-temurin-11-alpine' 
             args '-v /root/.m2:/root/.m2' 
+	    tools { 
+      	    	maven 'MAVEN_HOME' 
+            	jdk 'JAVA_HOME'
+	    }
         }
-	tools { 
-      	    maven 'MAVEN_HOME' 
-            jdk 'JAVA_HOME'
-	}
     }
     stages {
         stage('Build') { 
