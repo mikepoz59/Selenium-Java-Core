@@ -19,13 +19,13 @@ public class WebTest extends BaseTest {
         WebDriver driver = null;
         switch (browser) {
             case EDGE: {
-                System.setProperty("webdriver.msedgedriver.driver","C:\\Tools\\WebDrivers\\Edge\\msedgedriver.exe");
+                System.setProperty("webdriver.msedgedriver.driver","webdrivers/Edge/msedgedriver.exe");
                 driver = new EdgeDriver();
                 break;
             }
 
             case FIREFOX: {
-                System.setProperty("webdriver.gecko.driver","C:\\Tools\\WebDrivers\\FireFox\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver","webdrivers/FireFox/geckodriver.exe");
                 driver = new FirefoxDriver();
                 break;
             }

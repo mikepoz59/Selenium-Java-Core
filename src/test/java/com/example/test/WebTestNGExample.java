@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import com.example.Reporter.Logging;
 import com.example.TestTypes.WebTest;
 
-public class TestNGExample extends WebTest {
+public class WebTestNGExample extends WebTest {
 
     @Test  
     public void openBrowserAndNavigateBing() {
